@@ -1,0 +1,326 @@
+@import 'includes/variables';
+@import 'includes/reset';
+@import 'includes/fonts';
+
+:root {
+    font-size: 16px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: $font-1;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #000;
+    background-color: #fff;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+nav {
+    position: absolute;
+    top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 4rem);
+    max-width: 2800px;
+    padding: 0 2rem;
+}
+
+#menu {
+    ul, li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+    }
+    /* The submenu links container*/
+.subdrop { 
+    background: #fff;
+    height: 0;
+    border-top: 0;
+    min-width: 100%;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    visibility: hidden;
+    height: 1px;
+    overflow: hidden;
+    z-index: 10;
+    li {
+        display: block!important;
+        padding: 0!important;
+    }
+    a {
+        color: #000;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        display: block;
+        padding: 12px 20px;
+        white-space: nowrap;
+        border-top: 2px solid #e8e8e8;
+    }
+    a:hover {
+        background-color: #e8e8e8;
+    }
+}
+
+/* Dropdown Parent Link Style */
+.droplink {
+    display: inline-block;
+    min-width: fit-content;
+    position: relative;
+    p {
+        margin: 0;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 12px 20px;
+        display: block;
+        white-space: nowrap;
+    }
+}
+
+/* Allows links to show on hover/focus and through keyboard navigation via focus-within */
+.droplink:hover {
+    .subdrop { 
+        visibility: visible;
+        height: auto;
+        z-index: 11;
+    }
+    p {
+        background-color: #fff;
+        color: $color-1;
+    }
+}
+/* Separate these to avoid IE completely ignoring the css above */
+.droplink:focus-within .subdrop { 
+    visibility: visible;
+    height: auto;
+    z-index: 11;
+}
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding: 5rem 0 1rem;
+    text-align: center;
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin: 0;
+    }
+    p {
+        font-weight: 300;
+        margin: 1rem 0 3rem;
+    }
+    hr {
+        width: 100%;
+        max-width: 41.25rem;
+        margin: 0 2rem;
+        border: none;
+        border-top: 5px dotted transparentize($color: #fff, $amount: 0.5);
+        align-self: center;
+
+    }
+}
+main {
+    width: 100%;
+    text-align: center;
+    .inner {
+        max-width: 41.25rem;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+}
+
+.bg-red {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    transition: background-color 0.5s ease, color 0.5s ease;
+    background-color: $color-1;
+    color: #fff;
+    a {
+        color: #fff;
+    }
+}
+
+a.button {
+    display: inline-block;
+    padding: 0.875rem 3.125rem;
+    border-radius: 0.438rem;
+    background-color: #fff;
+    color: $color-1;
+    line-height: 1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.1s ease;
+}
+
+a.button:hover {
+    background-color: transparentize($color: #fff, $amount: 0.1);
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    p {
+        font-weight: 300;
+    }
+}
+
+.accessible-wrapper {
+    padding: 0.75rem 1.25rem;
+    border-radius: 4px;
+    background-color: #B00C33;
+    display: flex;
+    gap: 2.5rem;
+    p {
+        margin: 0 0 0.5rem;
+    }
+}
+
+.mov_nav {
+    display: none;
+}
+
+#contrast {
+    background-image: url('../assets/images/contrast-off.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 1.25rem;
+    p {
+        margin: 0 0 1.8rem;
+        color: #fff;
+    }
+}
+
+.button-wrap {
+    button {
+        width: 1.25rem;
+        height: 1.25rem;
+        vertical-align: bottom;
+        background-size: 1.25rem;
+        background-repeat: no-repeat;
+    }
+    button:disabled {
+        opacity: 0.5;
+    }
+    #plus {
+        background-image: url('../assets/images/plus.svg');
+    }
+    #minus {
+        background-image: url('../assets/images/minus.svg');
+    }
+    #reset {
+        background-image: url('../assets/images/reset.svg');
+    }
+}
+
+
+body.contrast {
+    .bg-red, .accessible-wrapper {
+        background-color: #000 !important;
+    }
+    a.button {
+        color: #B00C33 !important;
+    }
+    #contrast {
+        background-image: url('../assets/images/contrast-on.svg');
+    }
+}
+
+
+@media screen and (max-width: 840px) {
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    #controls {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+    .mob_nav {
+        display: block;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-image: url('../assets/images/menu.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 2.5rem;
+    }
+    .mob_nav.open {
+        background-image: url('../assets/images/close.svg');
+    }
+
+    #menu {
+        max-height: 0;
+        overflow: hidden;
+        margin: 1rem auto;
+        padding: 0;
+        width: 100%;
+        background-color: $color-1;
+        &.open {
+            max-height: 100vh;
+        }
+        .droplink {
+            display: block;
+            border-top: 2px solid #fff;
+            &:hover {
+                p {
+                    background-color: $color-1;
+                    color:#fff;
+                }
+                .subdrop a {
+                    border-color: $color-1;
+                }
+            }
+        }
+        .droplink:last-child {
+            border-bottom: 2px solid #fff;
+        }
+        .subdrop {
+            position: static;
+            display: block;
+        }
+    }
+    header {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+
+
+//prefers reduced motion
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
+}
