@@ -115,7 +115,7 @@
       margin: 0 2em;
     }
 
-    h4 {
+    h4, span.headline {
       margin: 0;
       color: #000;
       font-size: 1.5em;
@@ -129,6 +129,7 @@
       font-weight: 300;
       line-height: 1.5;
       mso-line-height-alt: 24px;
+      padding-bottom: 1.5em;
     }
 
     .cta {
@@ -174,7 +175,6 @@
 
     .categorytag {
       font-family: 'Open Sans Ex Bold', Helvetica, Arial, sans-serif;
-      font-style: italic;
       font-size: 13px;
       line-height: 19px;
       text-transform: uppercase;
@@ -202,15 +202,18 @@
       border-radius: 63% 37% 59% 41% / 70% 58% 42% 30%;
     }
 
-    .blob h3 {
+    .blob span.head {
+      display: block;
       text-align: center;
       padding-top: 0.25em;
       font-size: 4em;
+      font-weight: 700;
       color: #B00C33;
       margin: 0;
     }
 
-    .blob p {
+    .blob span.text {
+      display: block;
       text-align: center;
       text-transform: uppercase;
       font-style: italic;
@@ -588,7 +591,7 @@ M.      MMMMMMMMM.
           <p class="intro">
             Hello [firstname,fallback=Email Geek]!</p>
           <p class="intro">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br> <br></p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br></p>
         </div>
         
           <p style="text-align: center;" class="redtext"><a href="https://example.com/?via=emailweekly" class="cta redtext" via="emailweekly"><!--[if mso]><i class="cta redtext" style="letter-spacing: 50px;mso-font-width:-100%;mso-text-raise:30pt">&nbsp;</i><![endif]--><span class="redtext" style="mso-text-raise:15pt;">
@@ -648,7 +651,7 @@ M.      MMMMMMMMM.
               <th class="colsplit" style="font-weight: normal;vertical-align: top;" align="center">
                 <table border="0" cellspacing="0" cellpadding="0" role="presentation" width="290" style="width: 290px;">
                   <tr>
-                    <td style="padding-top: 2em;mso-padding-alt: 32px 0 0 0;width:288px;">
+                    <td style="padding-top: 4em;mso-padding-alt: 32px 0 0 0;width:288px;">
                       <h3 style="margin:0;font-weight:bold;">
                         This is a spacer title module 2</h3>
                     </td>
@@ -658,7 +661,7 @@ M.      MMMMMMMMM.
                       
                         <table border="0" cellspacing="0" cellpadding="0" role="presentation" style="width:290px;width:18em;">
                           <tr>
-                            <td align="center" style="padding-top: 2em;mso-padding-alt: 32px 0 0 0;"><a href="https://www.actionrocket.co?via=emailweekly" via="emailweekly"><img src="https://images.emlcdn.net/cdn/1152/ed3e2e33-845b-4c40-92d1-510c1b4c07bb/1500x500.jpg" alt="" width="290" style="width: 290px;width: 18em;max-width: 100%; display: block;border-top-right-radius:10px;border-top-left-radius:10px;"></a></td>
+                            <td align="center" style="padding-top: 4em;mso-padding-alt: 32px 0 0 0;"><a href="https://www.actionrocket.co?via=emailweekly" via="emailweekly"><img src="https://images.emlcdn.net/cdn/1152/2a725ef7-0fbd-4c6d-9028-7cc1039c890b/1500x500.jpg" alt="" width="290" style="width: 290px;width: 18em;max-width: 100%; display: block;border-top-right-radius:10px;border-top-left-radius:10px;"></a></td>
                           </tr>
                           <tr>
                             <td align="right" style="border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;background-color: #01626F;">
@@ -669,9 +672,9 @@ M.      MMMMMMMMM.
                           </tr>
                           <tr>
                             <td class="categorytag" style="color: #01626F; padding-top: 1em;">
-                              <p>
+                              <span>
                                 Code
-                              </p>
+                              </span>
                             </td>
                           </tr>
                           <tr>
@@ -693,13 +696,17 @@ M.      MMMMMMMMM.
                                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     </p>
                                     <p style="margin: 0.5em; text-align: left; color: #262934; font-size: 1em;">
-                                      Bex Highfield<br><span style="font-size:0.8em;">
+                                      Bex Highfield<br><span style="font-size:1em; color: #595959;">
                                         Marketing Strategist
                                       </span>
                                     </p>
                                   </td>
                                 </tr>
                               </table>
+                              <p style="margin: 0.25em 0.5em; text-align: left; color: #B00C33; font-weight: bold;"><a href="https://www.actionrocket.co?via=emailweekly" style="text-decoration: underline;color:#B00C33;" via="emailweekly">
+                                Read more &gt;
+                              </a>
+                            </p>
                             </td>
                           </tr>
                           <tr>
@@ -717,7 +724,7 @@ M.      MMMMMMMMM.
                       
                         <table border="0" cellspacing="0" cellpadding="0" role="presentation" style="width:290px;width:18em;">
                           <tr>
-                            <td align="center" style="padding-top: 2em;mso-padding-alt: 32px 0 0 0;"><a href="https://www.actionrocket.co?via=emailweekly" via="emailweekly"><img src="https://images.emlcdn.net/cdn/1152/ed3e2e33-845b-4c40-92d1-510c1b4c07bb/1500x500.jpg" alt="" width="290" style="width: 18em;max-width: 100%; display: block;border-top-right-radius:10px;border-top-left-radius:10px;"></a></td>
+                            <td align="center" style="padding-top: 4em;mso-padding-alt: 32px 0 0 0;"><a href="https://www.actionrocket.co?via=emailweekly" via="emailweekly"><img src="https://images.emlcdn.net/cdn/1152/2a725ef7-0fbd-4c6d-9028-7cc1039c890b/1500x500.jpg" alt="" width="290" style="width: 18em;max-width: 100%; display: block;border-top-right-radius:10px;border-top-left-radius:10px;"></a></td>
                           </tr>
                           <tr>
                             <td align="right" style="border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;background-color: #106538;">
@@ -728,9 +735,9 @@ M.      MMMMMMMMM.
                           </tr>
                           <tr>
                             <td class="categorytag" style="color: #106538; padding-top: 1em;">
-                              <p>
+                              <span>
                                 Design
-                              </p>
+                              </span>
                             </td>
                           </tr>
                           <tr>
@@ -752,13 +759,18 @@ M.      MMMMMMMMM.
                                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     </p>
                                     <p style="margin: 0.5em; text-align: left; color: #262934; font-size: 1em;">
-                                      Bex Highfield<br><span style="font-size:0.8em;">
+                                      Bex Highfield<br><span style="font-size:1em; color: #595959;">
                                         Marketing Strategist
                                       </span>
                                     </p>
+                                    
                                   </td>
                                 </tr>
                               </table>
+                              <p style="margin: 0.25em 0.5em; text-align: left; color: #B00C33; font-weight: bold;"><a href="https://www.actionrocket.co?via=emailweekly" style="text-decoration: underline;color:#B00C33;" via="emailweekly">
+                                Read more &gt;
+                              </a>
+                            </p>
                             </td>
                           </tr>
                           <tr>
@@ -776,7 +788,7 @@ M.      MMMMMMMMM.
                       
                         <table border="0" cellspacing="0" cellpadding="0" role="presentation" style="width:290px;width:18em;">
                           <tr>
-                            <td align="center" style="padding-top: 2em;mso-padding-alt: 32px 0 0 0;"><a href="https://www.actionrocket.co?via=emailweekly" via="emailweekly"><img src="https://images.emlcdn.net/cdn/1152/ed3e2e33-845b-4c40-92d1-510c1b4c07bb/1500x500.jpg" alt="" width="290" style="width: 18em;max-width: 100%; display: block;border-top-right-radius:10px;border-top-left-radius:10px;"></a></td>
+                            <td align="center" style="padding-top: 4em;mso-padding-alt: 32px 0 0 0;"><a href="https://www.actionrocket.co?via=emailweekly" via="emailweekly"><img src="https://images.emlcdn.net/cdn/1152/2a725ef7-0fbd-4c6d-9028-7cc1039c890b/1500x500.jpg" alt="" width="290" style="width: 18em;max-width: 100%; display: block;border-top-right-radius:10px;border-top-left-radius:10px;"></a></td>
                           </tr>
                           <tr>
                             <td align="right" style="border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;background-color: #2557A7;">
@@ -787,9 +799,9 @@ M.      MMMMMMMMM.
                           </tr>
                           <tr>
                             <td class="categorytag" style="color: #2557A7; padding-top: 1em;">
-                              <p>
+                              <span>
                                 Industry
-                              </p>
+                              </span>
                             </td>
                           </tr>
                           <tr>
@@ -811,13 +823,17 @@ M.      MMMMMMMMM.
                                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     </p>
                                     <p style="margin: 0.5em; text-align: left; color: #262934; font-size: 1em;">
-                                      Bex Highfield<br><span style="font-size:0.8em;">
+                                      Bex Highfield<br><span style="font-size:1em; color: #595959;">
                                         Marketing Strategist
                                       </span>
                                     </p>
                                   </td>
                                 </tr>
                               </table>
+                              <p style="margin: 0.25em 0.5em; text-align: left; color: #B00C33; font-weight: bold;"><a href="https://www.actionrocket.co?via=emailweekly" style="text-decoration: underline;color:#B00C33;" via="emailweekly">
+                                Read more &gt;
+                              </a>
+                            </p>
                             </td>
                           </tr>
                           <tr>
@@ -835,7 +851,7 @@ M.      MMMMMMMMM.
                       
                         <table border="0" cellspacing="0" cellpadding="0" role="presentation" style="width:290px;width:18em;">
                           <tr>
-                            <td align="center" style="padding-top: 2em;mso-padding-alt: 32px 0 0 0;"><a href="https://www.actionrocket.co?via=emailweekly" via="emailweekly"><img src="https://images.emlcdn.net/cdn/1152/ed3e2e33-845b-4c40-92d1-510c1b4c07bb/1500x500.jpg" alt="" width="290" style="width: 18em;max-width: 100%; display: block;border-top-right-radius:10px;border-top-left-radius:10px;"></a></td>
+                            <td align="center" style="padding-top: 4em;mso-padding-alt: 32px 0 0 0;"><a href="https://www.actionrocket.co?via=emailweekly" via="emailweekly"><img src="https://images.emlcdn.net/cdn/1152/2a725ef7-0fbd-4c6d-9028-7cc1039c890b/1500x500.jpg" alt="" width="290" style="width: 18em;max-width: 100%; display: block;border-top-right-radius:10px;border-top-left-radius:10px;"></a></td>
                           </tr>
                           <tr>
                             <td align="right" style="border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;background-color: #01626F;">
@@ -846,9 +862,9 @@ M.      MMMMMMMMM.
                           </tr>
                           <tr>
                             <td class="categorytag" style="color: #01626F; padding-top: 1em;">
-                              <p>
+                              <span>
                                 Code
-                              </p>
+                              </span>
                             </td>
                           </tr>
                           <tr>
@@ -870,13 +886,17 @@ M.      MMMMMMMMM.
                                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     </p>
                                     <p style="margin: 0.5em; text-align: left; color: #262934; font-size: 1em;">
-                                      Bex Highfield<br><span style="font-size:0.8em;">
+                                      Bex Highfield<br><span style="font-size:1em; color: #595959;">
                                         Marketing Strategist
                                       </span>
                                     </p>
                                   </td>
                                 </tr>
                               </table>
+                              <p style="margin: 0.25em 0.5em; text-align: left; color: #B00C33; font-weight: bold;"><a href="https://www.actionrocket.co?via=emailweekly" style="text-decoration: underline;color:#B00C33;" via="emailweekly">
+                                Read more &gt;
+                              </a>
+                            </p>
                             </td>
                           </tr>
                           <tr>
@@ -894,7 +914,7 @@ M.      MMMMMMMMM.
                       
                         <table border="0" cellspacing="0" cellpadding="0" role="presentation" style="width:290px;width:18em;">
                           <tr>
-                            <td align="center" style="padding-top: 2em;mso-padding-alt: 32px 0 0 0;"><a href="https://www.actionrocket.co?via=emailweekly" via="emailweekly"><img src="https://images.emlcdn.net/cdn/1152/ed3e2e33-845b-4c40-92d1-510c1b4c07bb/1500x500.jpg" alt="" width="290" style="width: 18em;max-width: 100%; display: block;border-top-right-radius:10px;border-top-left-radius:10px;"></a></td>
+                            <td align="center" style="padding-top: 4em;mso-padding-alt: 32px 0 0 0;"><a href="https://www.actionrocket.co?via=emailweekly" via="emailweekly"><img src="https://images.emlcdn.net/cdn/1152/2a725ef7-0fbd-4c6d-9028-7cc1039c890b/1500x500.jpg" alt="" width="290" style="width: 18em;max-width: 100%; display: block;border-top-right-radius:10px;border-top-left-radius:10px;"></a></td>
                           </tr>
                           <tr>
                             <td align="right" style="border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;background-color: #01626F;">
@@ -905,9 +925,9 @@ M.      MMMMMMMMM.
                           </tr>
                           <tr>
                             <td class="categorytag" style="color: #01626F; padding-top: 1em;">
-                              <p>
+                              <span>
                                 Code
-                              </p>
+                              </span>
                             </td>
                           </tr>
                           <tr>
@@ -929,13 +949,17 @@ M.      MMMMMMMMM.
                                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     </p>
                                     <p style="margin: 0.5em; text-align: left; color: #262934; font-size: 1em;">
-                                      Bex Highfield<br><span style="font-size:0.8em;">
+                                      Bex Highfield<br><span style="font-size:1em; color: #595959;">
                                         Marketing Strategist
                                       </span>
                                     </p>
                                   </td>
                                 </tr>
                               </table>
+                              <p style="margin: 0.25em 0.5em; text-align: left; color: #B00C33; font-weight: bold;"><a href="https://www.actionrocket.co?via=emailweekly" style="text-decoration: underline;color:#B00C33;" via="emailweekly">
+                                Read more &gt;
+                              </a>
+                            </p>
                             </td>
                           </tr>
                           <tr>
@@ -950,7 +974,7 @@ M.      MMMMMMMMM.
                   </tr>
                 </table>
               </th>
-              <th class="colsplit" style="font-weight: normal;width:20px;" width="20">&nbsp;</th>
+              <th class="colsplit" style="font-weight: normal;width:40px;" width="40">&nbsp;</th>
               <th class="colsplit" style="font-weight: normal;vertical-align: top;" align="center">
                 <table border="0" cellspacing="0" cellpadding="0" role="presentation" width="290" style="width: 290px;">
                   <tr>
@@ -958,7 +982,7 @@ M.      MMMMMMMMM.
                       
                         <table border="0" cellspacing="0" cellpadding="0" role="presentation" style="width:290px;width:18em;">
                           <tr>
-                            <td align="center"><a href="https://www.actionrocket.co?via=emailweekly" via="emailweekly"><img src="https://images.emlcdn.net/cdn/1152/ed3e2e33-845b-4c40-92d1-510c1b4c07bb/1500x500.jpg" alt="" width="290" style="width: 18em;max-width: 100%; display: block;border-top-right-radius:10px;border-top-left-radius:10px;"></a></td>
+                            <td align="center"><a href="https://www.actionrocket.co?via=emailweekly" via="emailweekly"><img src="https://images.emlcdn.net/cdn/1152/2a725ef7-0fbd-4c6d-9028-7cc1039c890b/1500x500.jpg" alt="" width="290" style="width: 18em;max-width: 100%; display: block;border-top-right-radius:10px;border-top-left-radius:10px;"></a></td>
                           </tr>
                           <tr>
                             <td align="right" style="border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;background-color: #106538;">
@@ -969,9 +993,9 @@ M.      MMMMMMMMM.
                           </tr>
                           <tr>
                             <td class="categorytag" style="color: #106538; padding-top: 1em;">
-                              <p>
+                              <span>
                                 Design
-                              </p>
+                              </span>
                             </td>
                           </tr>
                           <tr>
@@ -993,13 +1017,17 @@ M.      MMMMMMMMM.
                                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     </p>
                                     <p style="margin: 0.5em; text-align: left; color: #262934; font-size: 1em;">
-                                      Bex Highfield<br><span style="font-size:0.8em;">
+                                      Bex Highfield<br><span style="font-size:1em; color: #595959;">
                                         Marketing Strategist
                                       </span>
                                     </p>
                                   </td>
                                 </tr>
                               </table>
+                              <p style="margin: 0.25em 0.5em; text-align: left; color: #B00C33; font-weight: bold;"><a href="https://www.actionrocket.co?via=emailweekly" style="text-decoration: underline;color:#B00C33;" via="emailweekly">
+                                Read more &gt;
+                              </a>
+                            </p>
                             </td>
                           </tr>
                           <tr>
@@ -1017,7 +1045,7 @@ M.      MMMMMMMMM.
                       
                         <table border="0" cellspacing="0" cellpadding="0" role="presentation" style="width:290px;width:18em;">
                           <tr>
-                            <td align="center" style="padding-top: 2em;mso-padding-alt: 32px 0 0 0;"><a href="https://www.actionrocket.co?via=emailweekly" via="emailweekly"><img src="https://images.emlcdn.net/cdn/1152/ed3e2e33-845b-4c40-92d1-510c1b4c07bb/1500x500.jpg" alt="" width="290" style="width: 18em;max-width: 100%; display: block;border-top-right-radius:10px;border-top-left-radius:10px;"></a></td>
+                            <td align="center" style="padding-top: 4em;mso-padding-alt: 32px 0 0 0;"><a href="https://www.actionrocket.co?via=emailweekly" via="emailweekly"><img src="https://images.emlcdn.net/cdn/1152/2a725ef7-0fbd-4c6d-9028-7cc1039c890b/1500x500.jpg" alt="" width="290" style="width: 18em;max-width: 100%; display: block;border-top-right-radius:10px;border-top-left-radius:10px;"></a></td>
                           </tr>
                           <tr>
                             <td align="right" style="border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;background-color: #2557A7;">
@@ -1028,9 +1056,9 @@ M.      MMMMMMMMM.
                           </tr>
                           <tr>
                             <td class="categorytag" style="color: #2557A7; padding-top: 1em;">
-                              <p>
+                              <span>
                                 Industry
-                              </p>
+                              </span>
                             </td>
                           </tr>
                           <tr>
@@ -1052,13 +1080,17 @@ M.      MMMMMMMMM.
                                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     </p>
                                     <p style="margin: 0.5em; text-align: left; color: #262934; font-size: 1em;">
-                                      Bex Highfield<br><span style="font-size:0.8em;">
+                                      Bex Highfield<br><span style="font-size:1em; color: #595959;">
                                         Marketing Strategist
                                       </span>
                                     </p>
                                   </td>
                                 </tr>
                               </table>
+                              <p style="margin: 0.25em 0.5em; text-align: left; color: #B00C33; font-weight: bold;"><a href="https://www.actionrocket.co?via=emailweekly" style="text-decoration: underline;color:#B00C33;" via="emailweekly">
+                                Read more &gt;
+                              </a>
+                            </p>
                             </td>
                           </tr>
                           <tr>
@@ -1076,7 +1108,7 @@ M.      MMMMMMMMM.
                       
                         <table border="0" cellspacing="0" cellpadding="0" role="presentation" style="width:290px;width:18em;">
                           <tr>
-                            <td align="center" style="padding-top: 2em;mso-padding-alt: 32px 0 0 0;"><a href="https://www.actionrocket.co?via=emailweekly" via="emailweekly"><img src="https://images.emlcdn.net/cdn/1152/ed3e2e33-845b-4c40-92d1-510c1b4c07bb/1500x500.jpg" alt="" width="290" style="width: 18em;max-width: 100%; display: block;border-top-right-radius:10px;border-top-left-radius:10px;"></a></td>
+                            <td align="center" style="padding-top: 4em;mso-padding-alt: 32px 0 0 0;"><a href="https://www.actionrocket.co?via=emailweekly" via="emailweekly"><img src="https://images.emlcdn.net/cdn/1152/2a725ef7-0fbd-4c6d-9028-7cc1039c890b/1500x500.jpg" alt="" width="290" style="width: 18em;max-width: 100%; display: block;border-top-right-radius:10px;border-top-left-radius:10px;"></a></td>
                           </tr>
                           <tr>
                             <td align="right" style="border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;background-color: #01626F;">
@@ -1087,9 +1119,9 @@ M.      MMMMMMMMM.
                           </tr>
                           <tr>
                             <td class="categorytag" style="color: #01626F; padding-top: 1em;">
-                              <p>
+                              <span>
                                 Code
-                              </p>
+                              </span>
                             </td>
                           </tr>
                           <tr>
@@ -1111,13 +1143,17 @@ M.      MMMMMMMMM.
                                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     </p>
                                     <p style="margin: 0.5em; text-align: left; color: #262934; font-size: 1em;">
-                                      Bex Highfield<br><span style="font-size:0.8em;">
+                                      Bex Highfield<br><span style="font-size:1em; color: #595959;">
                                         Marketing Strategist
                                       </span>
                                     </p>
                                   </td>
                                 </tr>
                               </table>
+                              <p style="margin: 0.25em 0.5em; text-align: left; color: #B00C33; font-weight: bold;"><a href="https://www.actionrocket.co?via=emailweekly" style="text-decoration: underline;color:#B00C33;" via="emailweekly">
+                                Read more &gt;
+                              </a>
+                            </p>
                             </td>
                           </tr>
                           <tr>
@@ -1135,7 +1171,7 @@ M.      MMMMMMMMM.
                       
                         <table border="0" cellspacing="0" cellpadding="0" role="presentation" style="width:290px;width:18em;">
                           <tr>
-                            <td align="center" style="padding-top: 2em;mso-padding-alt: 32px 0 0 0;"><a href="https://www.actionrocket.co?via=emailweekly" via="emailweekly"><img src="https://images.emlcdn.net/cdn/1152/ed3e2e33-845b-4c40-92d1-510c1b4c07bb/1500x500.jpg" alt="" width="290" style="width: 18em;max-width: 100%; display: block;border-top-right-radius:10px;border-top-left-radius:10px;"></a></td>
+                            <td align="center" style="padding-top: 4em;mso-padding-alt: 32px 0 0 0;"><a href="https://www.actionrocket.co?via=emailweekly" via="emailweekly"><img src="https://images.emlcdn.net/cdn/1152/2a725ef7-0fbd-4c6d-9028-7cc1039c890b/1500x500.jpg" alt="" width="290" style="width: 18em;max-width: 100%; display: block;border-top-right-radius:10px;border-top-left-radius:10px;"></a></td>
                           </tr>
                           <tr>
                             <td align="right" style="border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;background-color: #106538;">
@@ -1146,9 +1182,9 @@ M.      MMMMMMMMM.
                           </tr>
                           <tr>
                             <td class="categorytag" style="color: #106538; padding-top: 1em;">
-                              <p>
+                              <span>
                                 Design
-                              </p>
+                              </span>
                             </td>
                           </tr>
                           <tr>
@@ -1170,13 +1206,17 @@ M.      MMMMMMMMM.
                                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     </p>
                                     <p style="margin: 0.5em; text-align: left; color: #262934; font-size: 1em;">
-                                      Bex Highfield<br><span style="font-size:0.8em;">
+                                      Bex Highfield<br><span style="font-size:1em; color: #595959;">
                                         Marketing Strategist
                                       </span>
                                     </p>
                                   </td>
                                 </tr>
                               </table>
+                              <p style="margin: 0.25em 0.5em; text-align: left; color: #B00C33; font-weight: bold;"><a href="https://www.actionrocket.co?via=emailweekly" style="text-decoration: underline;color:#B00C33;" via="emailweekly">
+                                Read more &gt;
+                              </a>
+                            </p>
                             </td>
                           </tr>
                           <tr>
@@ -1194,7 +1234,7 @@ M.      MMMMMMMMM.
                       
                         <table border="0" cellspacing="0" cellpadding="0" role="presentation" style="width:290px;width:18em;">
                           <tr>
-                            <td align="center" style="padding-top: 2em;mso-padding-alt: 32px 0 0 0;"><a href="https://www.actionrocket.co?via=emailweekly" via="emailweekly"><img src="https://images.emlcdn.net/cdn/1152/ed3e2e33-845b-4c40-92d1-510c1b4c07bb/1500x500.jpg" alt="" width="290" style="width: 18em;max-width: 100%; display: block;border-top-right-radius:10px;border-top-left-radius:10px;"></a></td>
+                            <td align="center" style="padding-top: 4em;mso-padding-alt: 32px 0 0 0;"><a href="https://www.actionrocket.co?via=emailweekly" via="emailweekly"><img src="https://images.emlcdn.net/cdn/1152/2a725ef7-0fbd-4c6d-9028-7cc1039c890b/1500x500.jpg" alt="" width="290" style="width: 18em;max-width: 100%; display: block;border-top-right-radius:10px;border-top-left-radius:10px;"></a></td>
                           </tr>
                           <tr>
                             <td align="right" style="border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;background-color: #2557A7;">
@@ -1205,9 +1245,9 @@ M.      MMMMMMMMM.
                           </tr>
                           <tr>
                             <td class="categorytag" style="color: #2557A7; padding-top: 1em;">
-                              <p>
+                              <span>
                                 Industry
-                              </p>
+                              </span>
                             </td>
                           </tr>
                           <tr>
@@ -1229,13 +1269,17 @@ M.      MMMMMMMMM.
                                       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     </p>
                                     <p style="margin: 0.5em; text-align: left; color: #262934; font-size: 1em;">
-                                      Bex Highfield<br><span style="font-size:0.8em;">
+                                      Bex Highfield<br><span style="font-size:1em; color: #595959;">
                                         Marketing Strategist
                                       </span>
                                     </p>
                                   </td>
                                 </tr>
                               </table>
+                              <p style="margin: 0.25em 0.5em; text-align: left; color: #B00C33; font-weight: bold;"><a href="https://www.actionrocket.co?via=emailweekly" style="text-decoration: underline;color:#B00C33;" via="emailweekly">
+                                Read more &gt;
+                              </a>
+                            </p>
                             </td>
                           </tr>
                         </table>
@@ -1352,9 +1396,9 @@ M.      MMMMMMMMM.
                               <table role="presentation" cellpadding="0" cellspacing="0" border="0">
                                 <tr>
                                   <td class="categorytag" style="color:#01626F">
-                                    <p>
+                                    <span>
                                       Lorem ipsum
-                                    </p>
+                                    </span>
                                   </td>
                                 </tr>
                                 <tr>
@@ -1432,9 +1476,9 @@ M.      MMMMMMMMM.
                               <table role="presentation" cellpadding="0" cellspacing="0" border="0">
                                 <tr>
                                   <td class="categorytag" style="color:#01626F">
-                                    <p>
+                                    <span>
                                       Lorem ipsum
-                                    </p>
+                                    </span>
                                   </td>
                                 </tr>
                                 <tr>
@@ -1512,9 +1556,9 @@ M.      MMMMMMMMM.
                               <table role="presentation" cellpadding="0" cellspacing="0" border="0">
                                 <tr>
                                   <td class="categorytag" style="color:#01626F">
-                                    <p>
+                                    <span>
                                       Lorem ipsum
-                                    </p>
+                                    </span>
                                   </td>
                                 </tr>
                                 <tr>
@@ -1556,6 +1600,73 @@ M.      MMMMMMMMM.
 
 
 
+        </div>
+        <!--[if true]>
+              </td>
+            </tr>
+          </table>
+          <![endif]-->
+      
+        <!--[if true]>
+          <table role="presentation" style="width:40em; background: #fff;" align="center">
+            <tr>
+              <td style="padding-top: 48px;">
+          <![endif]-->
+        <div class="module blobs" style="background:#fff;">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+            <tbody>
+              <tr>
+                <th class="colsplit" style="font-weight: normal;" align="center">
+                  <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                    <tr>
+                      <td style="padding: 0 10px;" align="center">
+                        <div class="blob first">
+                          <div class="accent">
+                            <span class="head" style="color: #A20B2E;">
+                              27</span>
+                            <span class="text">
+                              Lorem ipsum</span>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </th>
+                <th class="colsplit" style="font-weight: normal;" align="center">
+                  <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                    <tr>
+                      <td style="padding: 0 10px;" align="center">
+                        <div class="blob second">
+                          <div class="accent">
+                            <span class="head" style="color: #A20B2E;">
+                              854</span>
+                            <span class="text">
+                              Lorem ipsum</span>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </th>
+                <th class="colsplit" style="font-weight: normal;" align="center">
+                  <table border="0" cellspacing="0" cellpadding="0" role="presentation">
+                    <tr>
+                      <td style="padding: 0 10px;" align="center">
+                        <div class="blob third">
+                          <div class="accent">
+                            <span class="head" style="color: #A20B2E;">
+                              1</span>
+                            <span class="text">
+                              Lorem ipsum</span>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </th>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <!--[if true]>
               </td>
