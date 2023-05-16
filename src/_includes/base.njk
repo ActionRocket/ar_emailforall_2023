@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ title }}</title>
     <meta name="description" content="{{ description }}">
-    <link rel="stylesheet" href="{{ 'css/main.css' | url }}">
-    <script defer src="{{ 'js/main.js' | url }}"></script>
+    <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
+    <script defer src="{{ '/js/main.js' | url }}"></script>
   </head>
-  <body>
+  <body class="{% if body_class %}{{ body_class }}{% else %}body{% endif %}">
     {% include "partials/header.njk" %}
     <main>
 	    {{ content | safe }}
