@@ -1,25 +1,27 @@
 --- 
-title: Email for All - Action Rocket and Beyond the Envelope
+title: Resources | Email for All - Action Rocket and Beyond the Envelope
 body_class: base
 layout: "base.njk" 
 ---
 
     <div class="inner">
-        <h1>Resources</h1>
-        <p>We want to help you make the best decisions with accessibility in mind. Here you will find a list of resources and information we’ve created.</p>
+        <h1>Resources for empowering accessibility</h1>
+        <p>We want to help you make informed decisions with accessibility at the forefront. So here’s some of our working brand resources to assist.</p>
 
-        <ul>
+        <ul class="resource-list">
             <li>
-                <p><a href="https://www.actionrocket.co/email-for-all">Click here to download the Email for All report</a></p>
+                <img src="/assets/images/icon-pdf.png" width="40">
+                <p><a href="https://www.actionrocket.co/email-for-all">Download the Email for All report</a></p>
             </li>
             <li>
-                <p><a href="https://www.actionrocket.co/email-for-all">Click here to view helpful accessibility resources</a></p>
+                <img src="/assets/images/icon-search.png" width="40">
+                <p><a href="https://www.actionrocket.co/email-for-all#block-11a2552ea07f2369e7a8">View helpful accessibility resources</a></p>
             </li>
         </ul>
 
-        <h2>Want to see what a fully AAA+ compliant Email Design System looks like?</h2>
+        <h2>Curious to see what a fully AAA+ compliant Email Design System looks like?</h2>
         <p>
-            We have taken our Email Weekly template and given it a full AAA+ overhaul. The email itself has always adhered to AA accessibility best practices, but we wanted to see what it would mean and look like for it to be fully compliant. Click on the email below to see what changes we’ve had to make to ensure it’s fully accessable.
+            We’ve taken our Email Weekly template and given it a full AAA+ overhaul. Whilst the template has always adhered to AA accessibility best practices, we were keen to see what meeting the highest accessibility standards would look like. Scroll through the email below to explore the modifications made to make it fully compliant.
         </p>
 
         </div>
@@ -32,9 +34,9 @@ layout: "base.njk"
                 </div>
             </div>
             <div class="dialog">
-                <p id="hotspot1" class="hotspot active"><strong>Colour contrast</strong> - While our brand red meets the AA compliance for colour contrast, it doesn't quite meet the stricter AAA standards. So we've changed the red and other colours across the email to meet the 7:1 ratio.</p>
-                <p id="hotspot2" class="hotspot"><strong>Layout changes</strong> - The AAA guidelines have stricter requirements for how elements are positioned on the page, in particular the distance between distinct sections.</p>
-                <p id="hotspot3" class="hotspot"><strong>Disabling animations</strong> - Animations and moving content can be distracting or disorienting for some people. As such, we've used the prefers-reduced-motion media query to disable CSS animations and GIFs for those who have enabled the setting on their device.</p>
+                <p id="hotspot1" class="hotspot active"><strong>Colour contrast</strong> - While our brand red meets the AA compliance for colour contrast, it doesn't quite meet the stricter AAA standards. So we've changed our brand red and other colours across the email to meet the 7:1 ratio.</p>
+                <p id="hotspot2" class="hotspot"><strong>Layout changes</strong> - The AAA guidelines have stricter requirements for how elements are positioned on the page, in particular the distance between distinct sections. We've also added a clear CTA link at the end of each article to keep a meaningful sequence.</p>
+                <p id="hotspot3" class="hotspot"><strong>Disabling animations</strong> - Animations and moving content can be distracting or disorienting for some people. As such, we've used the <code>prefers-reduced-motion</code> media query to disable CSS animations and GIFs for those who have enabled the setting on their device.</p>
             </div>
 
     </div>
@@ -47,8 +49,8 @@ layout: "base.njk"
 
     iframe.addEventListener('load', function() {
             let hotspotScroll = {
-                "hotspot1": 100,
-                "hotspot2": 690,
+                "hotspot1": 690,
+                "hotspot2": 1200,
                 "hotspot3": 1800
             };
         iframe.contentWindow.addEventListener('scroll', function() {

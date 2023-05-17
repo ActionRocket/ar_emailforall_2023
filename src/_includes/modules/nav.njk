@@ -1,21 +1,30 @@
 <nav>
-    <div id="controls">
-        <div class="accessible-wrapper">
-            <button id="contrast" aria-label="Increase Contrast">
-                <p>Contrast</p>
-            </button>
-            <div id="text-size">
-                <p>Text Size</p>
-                <div class="button-wrap">
-                    <button id="minus" aria-label="Decrease"></button>
-                    <button id="reset" aria-label="Reset"></button>
-                    <button id="plus" aria-label="Increase"></button>
+    <div class="left">
+    {% if show_logo %}
+        <div id="logo">
+            <a href="/">
+                <img src="/assets/images/Logo.svg" alt="Email for All" width="56">
+            </a>
+        </div>
+    {% endif %}
+        <div id="controls">
+            <div class="accessible-wrapper">
+                <button id="contrast" aria-label="Increase Contrast">
+                    <p>Contrast</p>
+                </button>
+                <div id="text-size">
+                    <p>Text Size</p>
+                    <div class="button-wrap">
+                        <button id="minus" aria-label="Decrease"></button>
+                        <button id="reset" aria-label="Reset"></button>
+                        <button id="plus" aria-label="Increase"></button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="mob_nav">
-            <button id="mob_nav" aria-label="Open Navigation">
-            </button>
+            <div class="mob_nav">
+                <button id="mob_nav" aria-label="Open Navigation">
+                </button>
+            </div>
         </div>
     </div>
     <ul id="menu">
