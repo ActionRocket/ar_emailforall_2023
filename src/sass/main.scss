@@ -454,17 +454,20 @@ main .two-col {
         .droplink {
             display: block;
             border-top: 2px solid #fff;
-            &:hover {
-                p {
-                    background-color: $color-2;
-                    color:#fff;
+            .subdrop { 
+                visibility: visible;
+                height: auto;
+                z-index: 11;
+                box-sizing: border-box;
+                border: 0;
+                a {
+                    display: block;
+                    border-color: $color-2;
                 }
-                .subdrop {
-                    border: 0;
-                    a {
-                        border-color: $color-2;
-                    }
-                }
+            }
+            p {
+                background-color: $color-2;
+                color:#fff;
             }
         }
         .droplink:last-child {
