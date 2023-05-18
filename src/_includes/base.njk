@@ -7,15 +7,26 @@
     <title>{{ title }}</title>
     <meta name="description" content="The importance of email accessiblity">
 
-    <meta property="og:url" content="http://www.emailforall.co.uk" />
+    <meta rel="canonical" content="https://emailforall.co.uk/"/>
+
+    <meta property="og:url" content="http://emailforall.co.uk" />
     <meta property="og:title" content="Email For All - ActionRocket & Beyond the Envelope™" />
     <meta property="og:description" content="The importance of email accessiblity" />
-    <meta property="og:image" content="/assets/images/EmailForAll.jpg" />
+    <meta property="og:image" content="https://emailforall.co.uk/assets/images/EmailForAll.jpg" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="emailforall.co.uk">
+    <meta property="twitter:url" content="https://emailforall.co.uk">
+    <meta name="twitter:title" content="Email For All - ActionRocket & Beyond the Envelope™">
+    <meta name="twitter:description" content="The importance of email accessiblity">
+    <meta name="twitter:image" content="https://emailforall.co.uk/assets/images/EmailForAll.jpg">
+
 
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
-    <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
-    <script defer src="{{ '/js/main.js' | url }}"></script>
+    <link rel="stylesheet" href="{{ 'css/main.css' | url }}">
+    <script defer src="{{ 'js/main.js' | url }}"></script>
   </head>
   <body class="{% if body_class %}{{ body_class }}{% else %}body{% endif %}">
     {% include "partials/header.njk" %}
