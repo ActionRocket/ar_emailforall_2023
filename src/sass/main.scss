@@ -2,6 +2,8 @@
 @import 'includes/reset';
 @import 'includes/fonts';
 
+//GLOBAL STYLES
+
 :root {
     font-size: 16px;
 }
@@ -35,12 +37,13 @@ a {
 
 code {
     background-color: rgba(0,0,0,0.09);
-    color: #B00C33;
+    color: $color-2;
     border-radius: 0.3em;
     padding: 2px 3px 4px;
     white-space: nowrap;
 }
 
+//NAVIGATION
 
 nav {
     position: absolute;
@@ -53,7 +56,7 @@ nav {
     max-width: 2800px;
     padding: 16px 32px;
     box-sizing: border-box;
-    background-color: #B00C33;
+    background-color: $color-2;
     #controls {
         flex-shrink: 0;
         p {
@@ -114,10 +117,10 @@ nav {
             display: none;
             padding: 12px 20px;
             white-space: nowrap;
-            border-top: 2px solid #e8e8e8;
+            border-top: 2px solid $color-grey;
         }
         a:hover {
-            background-color: #e8e8e8;
+            background-color: $color-grey;
         }
     }
 
@@ -128,7 +131,7 @@ nav {
             height: auto;
             z-index: 11;
             box-sizing: border-box;
-            border: 2px solid #e8e8e8;
+            border: 2px solid $color-grey;
             border-top: 0;
             a {
                 display: block;
@@ -147,6 +150,7 @@ nav {
     }
 }
 
+//HEADER
 
 header {
     display: flex;
@@ -179,6 +183,9 @@ header {
 
     }
 }
+
+//MAIN
+
 main {
     width: 100%;
     text-align: center;
@@ -194,7 +201,7 @@ main {
     flex-grow: 1;
     &.slim {
         flex-grow: 0;
-        background-color: #B00C33;
+        background-color: $color-2;
     }
 
     display: flex;
@@ -227,6 +234,9 @@ a.button:hover {
     background-color: transparentize($color: #fff, $amount: 0.1);
 }
 
+
+//FOOTER
+
 footer {
     background-color: #000;
     color: #fff;
@@ -237,10 +247,13 @@ footer {
     }
 }
 
+
+//ACCESSIBILITY
+
 .accessible-wrapper {
     padding: 12px 20px;
     border-radius: 4px;
-    background-color: #B00C33;
+    background-color: $color-2;
     display: flex;
     gap: 40px;
     font-size: 16px;
@@ -296,7 +309,7 @@ body.contrast {
         background-color: #000 !important;
     }
     a.button {
-        color: #B00C33 !important;
+        color: $color-2 !important;
     }
     #contrast {
         background-image: url('../assets/images/contrast-on.svg');
@@ -307,7 +320,7 @@ body.contrast {
     display: none;
 }
 
-
+//SUB PAGE SPECIFIC STYLES
 
 .base {
     nav {
@@ -342,17 +355,9 @@ body.contrast {
     padding-left: 16px;
 }
 
-//prefers reduced motion
-@media (prefers-reduced-motion: reduce) {
-    * {
-        animation-duration: 0.001ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.001ms !important;
-        scroll-behavior: auto !important;
-    }
-}
 
-// hotspot styling
+
+//HOTSPOT STYLING
 
 main .two-col {
     @extend .inner;
@@ -388,10 +393,12 @@ main .two-col {
         transition: background-color 0.5s ease, transform 0.5s ease;
     }
     p.active {
-        background-color: #e8e8e8;
+        background-color: $color-grey;
         transform: scale(1.02)
     }
 }
+
+// MOBILE STYLES
 
 @media screen and (max-width: 840px) {
     nav {
@@ -439,7 +446,7 @@ main .two-col {
         margin: 0 auto;
         padding: 0;
         width: 100%;
-        background-color: #B00C33;
+        background-color: $color-2;
         &.open {
             max-height: 100vh;
 
@@ -449,13 +456,13 @@ main .two-col {
             border-top: 2px solid #fff;
             &:hover {
                 p {
-                    background-color: #B00C33;
+                    background-color: $color-2;
                     color:#fff;
                 }
                 .subdrop {
                     border: 0;
                     a {
-                        border-color: #B00C33;
+                        border-color: $color-2;
                     }
                 }
             }
@@ -509,5 +516,16 @@ main .two-col {
 
 
         }
+    }
+}
+
+
+//PREVENT ANIMATIONS ON REDUCE MOTION
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
     }
 }
