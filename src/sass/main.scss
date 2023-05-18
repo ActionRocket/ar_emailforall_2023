@@ -129,7 +129,7 @@ nav {
         }
     }
 
-    .droplink:focus > p {
+    .droplink:focus-visible > p {
             outline: 2px solid coral;
             border-radius: 2px;
     }
@@ -145,7 +145,7 @@ nav {
             border-top: 0;
             a {
                 display: block;
-                &:focus {
+                &:focus-visible {
                     background-color: $color-grey;
                     border: 2px solid coral;
                     border-radius: 2px;
