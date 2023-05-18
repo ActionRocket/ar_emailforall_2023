@@ -465,9 +465,13 @@ main .two-col {
                     border-color: $color-2;
                 }
             }
-            p {
+            p, &:hover p {
                 background-color: $color-2;
                 color:#fff;
+            }
+
+            &:hover .subdrop {
+                border: 0;
             }
         }
         .droplink:last-child {
