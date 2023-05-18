@@ -43,6 +43,11 @@ code {
     white-space: nowrap;
 }
 
+:focus-visible {
+    outline: 2px solid coral;
+    border-radius: 2px;
+}
+
 //NAVIGATION
 
 nav {
@@ -124,8 +129,13 @@ nav {
         }
     }
 
+    .droplink:focus > p {
+            outline: 2px solid coral;
+            border-radius: 2px;
+    }
+
     /* Allows links to show on hover/focus and through keyboard navigation via focus-within */
-    .droplink:hover {
+    .droplink:hover, .droplink:focus-within {
         .subdrop { 
             visibility: visible;
             height: auto;
@@ -135,6 +145,12 @@ nav {
             border-top: 0;
             a {
                 display: block;
+                &:focus {
+                    background-color: $color-grey;
+                    border: 2px solid coral;
+                    border-radius: 2px;
+                    outline: 0;
+                } 
             }
         }
         p {
